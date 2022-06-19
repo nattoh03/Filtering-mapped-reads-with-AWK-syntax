@@ -1,4 +1,4 @@
-# AWK-syntax
+# AWK-syntax -filtering and manipulation of sequences
 Basic syntax of filtering /manipulating files using awk
 
 function
