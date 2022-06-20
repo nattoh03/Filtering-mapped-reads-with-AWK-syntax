@@ -8,7 +8,7 @@ function
   - splits the file into fields - allows for columns
   - allows one to manipulate features unlike sed it allows to work with columns
  
- ###awk -F "\t" {print $n} inpute_file
+ ### awk -F "\t" {print $n} inpute_file
 
 e.g. 
 ### to print out the number of fields/columns in a file anopheles.gff3, this prints the output on screen, should be 9, tab delimited
