@@ -2,7 +2,7 @@
 Basic syntax of filtering /manipulating files using awk
 
 function
-  - extract/fileter, wrangle, compare and transform data
+  - extract/filter, wrangle, compare and transform data
   - work on delimited data
   - reads file line by line
   - splits the file into fields - allows for columns
