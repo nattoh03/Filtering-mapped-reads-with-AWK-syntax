@@ -1,9 +1,12 @@
 ########### AWK SYNTAX  ###############
 ## pwd
 /home/nattohz/
-## ls
+## ls 
+## get into the correct folder
 cd practical_folder/awk
-
+## ls 
+## ensure there are files such as anopheles.gff
+##run the commands as follows
 #### 1
 #### awk syntax to identify number of columns a file has, this prints 9 fields separated by a tab
 awk -F "\t" '{print NF}' anopheles.gff
