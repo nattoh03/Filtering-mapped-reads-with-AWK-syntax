@@ -3,10 +3,10 @@
 /home/nattohz/
 ## ls 
 ## get into the correct folder
-cd practical_folder/awk
+cd ./practical_folder/awk
 ## ls 
 ## ensure there are files such as anopheles.gff
-##run the commands as follows
+##run the commands as follows for each function
 #### 1
 #### awk syntax to identify number of columns a file has, this prints 9 fields separated by a tab
 awk -F "\t" '{print NF}' anopheles.gff
@@ -52,15 +52,3 @@ awk -F "\t" 'BEGIN{sum=0} $3=="repeat" {sum=sum+ $5-$4+1} END {print sum}' anoph
 #### 9
 #### obtain the means of genes
 awk -F "\t" 'BEGIN{sum=0; count=0} $3=="gene" {sum=+$6; count ++} END {print sum/count}' anopheles.gff
-
-
-
-
-
-
-
-
-
-
-
-
