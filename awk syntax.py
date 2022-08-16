@@ -6,7 +6,8 @@
 cd ./practical_folder/awk
 ## ls 
 ## ensure there are files such as anopheles.gff
-##run the commands as follows for each function
+## run the commands as follows for each function indicated
+
 #### 1
 #### awk syntax to identify number of columns a file has, this prints 9 fields separated by a tab
 awk -F "\t" '{print NF}' anopheles.gff
@@ -15,17 +16,14 @@ awk -F "\t" '{print NF}' anopheles.gff
 #### extract columns based on a field from a file, e.g. all entries for chromosome 2 only
 awk -F "\t" '$1=="chr2" {print $0}' anopheles.gff
 
-
 #### 2b
 #### combine extraction of columns based on a field from a file, e.g. all entries for column 1 and 3 
 awk -F "\t" '$1=="chr2" && $3="gene"' anopheles.gff
-
 
 #### 3
 #### extract various fields from a file 
 awk -F "\t" '{print $1, $3, $6, $9}' anopheles.gff
 ## observation, the output above is not in tab delimited, hence use OFS
-
 
 #### 4
 #### extract various fields from a file and retain its tab delimited format 
@@ -38,7 +36,6 @@ awk -F "\t" '$1=="chr2" || $3=="gene"' anopheles.gff
 #### 6
 #### Filter the output based on certain threshold
 awk -F "\t" '$1=="chr2" && $3=="gene" && $4<1100' anopheles.gff
-
 
 #### 7
 #### Filter to obtain the length of repeats in a file, NB: this is not a bed file
