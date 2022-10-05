@@ -5,7 +5,7 @@
 ## get into the correct folder
 cd ./practical_folder/awk
 ## ls 
-## ensure there are files such as anopheles.gff
+## ensure you have a file e.g. gene features format file ( with extension .gff) such as anopheles.gff
 ## run the commands as follows for each function indicated
 
 #### 1
