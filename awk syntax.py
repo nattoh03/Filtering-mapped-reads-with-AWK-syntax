@@ -17,7 +17,7 @@ awk -F "\t" '{print NF}' anopheles.gff
 awk -F "\t" '$1=="chr2" {print $0}' anopheles.gff
 
 #### 2b
-#### combine extraction of columns based on a field from a file, e.g. all entries for column 1 and 3 
+#### combine extraction of columns based on a field from a file, e.g. all entries for columns 1 and 3 
 awk -F "\t" '$1=="chr2" && $3="gene"' anopheles.gff
 
 #### 3
