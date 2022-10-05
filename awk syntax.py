@@ -21,7 +21,7 @@ awk -F "\t" '$1=="chr2" {print $0}' anopheles.gff
 awk -F "\t" '$1=="chr2" && $3="gene"' anopheles.gff
 
 #### 3
-#### extract various fields from a file 
+#### extract various fields from the gff file 
 awk -F "\t" '{print $1, $3, $6, $9}' anopheles.gff
 ## observation, the output above is not in tab delimited, hence use OFS
 
