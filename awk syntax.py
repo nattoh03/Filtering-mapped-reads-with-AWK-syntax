@@ -9,7 +9,7 @@ cd ./practical_folder/awk
 ## run the commands as follows for each function indicated
 
 #### 1
-#### awk syntax to identify number of columns a file has, this prints 9 fields separated by a tab
+#### awk syntax is used to identify the number of columns a file has, this prints 9 fields separated by a tab
 awk -F "\t" '{print NF}' anopheles.gff
 
 #### 2a
