@@ -47,5 +47,5 @@ awk -F "\t" '$4=="repeat" {print $3-$2}' anopheles.bed ## for a bed file
 awk -F "\t" 'BEGIN{sum=0} $3=="repeat" {sum=sum+ $5-$4+1} END {print sum}' anopheles.gff
 
 #### 9
-#### obtain the means of genes
+#### obtain the means of genes in the file
 awk -F "\t" 'BEGIN{sum=0; count=0} $3=="gene" {sum=+$6; count ++} END {print sum/count}' anopheles.gff
